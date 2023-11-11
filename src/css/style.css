@@ -1,0 +1,127 @@
+:root{
+    --color-efect: rgb(24, 151, 254);
+    --clock: #3803c7;
+}
+*{
+font-family: 'Montserrat', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #092f67, #202d5c, #292b51, #2e2a47, #2f2a3d);
+}
+.container {
+    background: #2f2a3d;
+    color: #fff;
+    z-index: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+h1{
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+p{  
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.clock {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background: var(--color-efect);
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 15px rgb(0,140,255),
+                0 0 30px rgb(0,140,255),
+                0 0 60px rgb(0,140,255);
+}
+.marker,
+.second {
+    background-color: #051937;
+    position: absolute;
+    transform-origin: 50% 100%;
+}
+
+.center {
+    border-radius: 50%;
+    background-color: #071326;
+    width: 170px;
+    height: 170px;
+    left: 15px;
+    top: 14px;
+    position: absolute;
+    
+}
+
+.second {
+    background-color: var(--color-efect);
+    height: 65px;
+    width: 2px;
+    top: 30px;
+    left: 98px;
+   box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+}
+
+.marker {
+    height: 5px;
+    width: 1px;
+    top: 10px;
+    left: 99px;
+    transform-origin: 50% 100%;
+}
+/*===========*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 450,
+  'GRAD' 0,
+  'opsz' 24
+}
+.shadow__btn {
+    padding: 10px 30px;
+    border: none;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(0,140,255),
+                0 0 25px rgb(0,140,255),
+                0 0 50px rgb(0,140,255),
+                0 0 100px rgb(0,140,255);
+  }
+.content{
+    color: #fff;
+    z-index: 1;
+    padding: 20px;
+}
+button{
+
+}
